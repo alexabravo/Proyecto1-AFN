@@ -1,3 +1,6 @@
+#Alexa Bravo    18831
+#Diseño de Lenguajes de Programación 
+#Febrero 2023 
 
 class Automata:
 	

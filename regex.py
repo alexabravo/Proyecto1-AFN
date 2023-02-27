@@ -3,13 +3,17 @@
 #Febrero 2023 
 
 #Utilzando Shounting Yard 
-def regex_to_postfix(regex):
+def regex_to_postfix(regex, debug):
     precedencia = {'(': 1, '|': 2, '.':3, '+': 4, '?': 4, '*': 4, ';':4, '^':5}
     postfix = []
     operadores = []
     for token in regex:
         if token.isalnum():
             postfix.append(token)
+
+            if debug:
+                print("stack: ", operadores)
+
         elif token == '(':
             operadores.append(token)
         elif token == ')':
