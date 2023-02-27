@@ -69,9 +69,9 @@ class EstadoAutomata:
 		for (symbol, target) in self.all_transitions():
 			target._print_graphviz(seen)
 			if symbol is None:
-				label = '\u03b5'  # Lower case epsilon
+				label = '\u03b5' 
 			else:
-				label = repr(symbol).replace('\\', '\\\\')  # Escape slashes
+				label = repr(symbol).replace('\\', '\\\\')  
 			print('    S{} -> S{} [label = "{}"];'.format(self.number, target.number, label))
 			
 class AFN(Automata):
