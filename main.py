@@ -4,10 +4,6 @@ from afn import AFN
 from graphviz import Source, render
 from contextlib import redirect_stdout
 
-
-DEBUG = False
-
-
 def validate_expr(expr):
 
 	operators = ["+", "|", "*", "?"]
